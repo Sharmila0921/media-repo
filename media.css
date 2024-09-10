@@ -1,0 +1,111 @@
+*{
+   margin:0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+.parent{
+    height: 100%;
+
+}
+.header{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aquamarine;
+
+}
+.main{
+height: 80vh;
+display: flex;
+
+}
+.footer{
+    height: 10vh;
+
+}
+.header__logo{
+    font-size:3.5vw;
+
+}
+.header__menu{
+    display: flex;
+    gap: 20px;
+    margin-right: 10px;
+   
+}
+.header__menu a{
+    text-decoration: none;
+    font-size:1vw;
+    
+
+}
+.header__menu a:hover{
+    color: brown;
+    /* font-size: 3vw; */
+
+}
+.main__img{
+
+    flex:1;
+    background-image: url(https://images.thedirect.com/media/article_full/potter1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    border-radius: 10px;  
+
+}
+.main__text{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.main__text_1{
+    font-size: 3vw;
+}
+
+[class^="main__text__"]{
+    font-size:2vw;
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5vw;
+    margin-right: 10px;
+}
+
+@media (max-width:576px){
+    .header__menu{
+        display: none;
+    }
+    .header{
+        justify-content: center;
+    }
+    .header__logo{
+        font-size: 5vw;
+    }
+    .main__text_2,.main__text_3{
+        display: none;
+    }
+    .main__text_1{
+        font-size: 6vw;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .footer{
+        justify-content: center;
+        font-size:4vw;
+
+    }
+}
+
+
+
+
